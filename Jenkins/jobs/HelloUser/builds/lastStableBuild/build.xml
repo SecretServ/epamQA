@@ -1,0 +1,174 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<build>
+  <actions>
+    <hudson.model.CauseAction>
+      <causeBag class="linked-hash-map">
+        <entry>
+          <hudson.triggers.SCMTrigger_-SCMTriggerCause/>
+          <int>1</int>
+        </entry>
+      </causeBag>
+    </hudson.model.CauseAction>
+    <hudson.triggers.SCMTrigger_-BuildAction/>
+    <hudson.model.ParametersAction>
+      <safeParameters class="sorted-set"/>
+      <parameters>
+        <hudson.model.StringParameterValue>
+          <name>username</name>
+          <description></description>
+          <value>guest</value>
+        </hudson.model.StringParameterValue>
+      </parameters>
+      <parameterDefinitionNames>
+        <string>username</string>
+      </parameterDefinitionNames>
+    </hudson.model.ParametersAction>
+    <org.jenkinsci.plugins.envinject.EnvInjectPluginAction plugin="envinject@2.2.0"/>
+    <hudson.plugins.git.util.BuildData plugin="git@3.12.0">
+      <buildsByBranchName>
+        <entry>
+          <string>refs/remotes/origin/master</string>
+          <hudson.plugins.git.util.Build>
+            <marked plugin="git-client@2.8.0">
+              <sha1>446ae5a4fb9798821be65628da0b587e4e1f04e3</sha1>
+              <branches class="list">
+                <hudson.plugins.git.Branch>
+                  <sha1 reference="../../../sha1"/>
+                  <name>refs/remotes/origin/master</name>
+                </hudson.plugins.git.Branch>
+              </branches>
+            </marked>
+            <revision reference="../marked"/>
+            <hudsonBuildNumber>1</hudsonBuildNumber>
+          </hudson.plugins.git.util.Build>
+        </entry>
+      </buildsByBranchName>
+      <lastBuild reference="../buildsByBranchName/entry/hudson.plugins.git.util.Build"/>
+      <remoteUrls>
+        <string>https://github.com/vitalliuss/helloci.git</string>
+      </remoteUrls>
+    </hudson.plugins.git.util.BuildData>
+    <hudson.plugins.git.GitTagAction plugin="git@3.12.0">
+      <tags class="hudson.util.CopyOnWriteMap$Tree">
+        <entry>
+          <string>refs/remotes/origin/master</string>
+          <list/>
+        </entry>
+      </tags>
+      <ws>/home/denis/workspace/HelloUser</ws>
+    </hudson.plugins.git.GitTagAction>
+    <hudson.scm.SCMRevisionState_-None/>
+    <hudson.plugins.cobertura.CoberturaBuildAction plugin="cobertura@1.14">
+      <healthyTarget>
+        <targets class="enum-map" enum-type="hudson.plugins.cobertura.targets.CoverageMetric">
+          <entry>
+            <hudson.plugins.cobertura.targets.CoverageMetric>METHOD</hudson.plugins.cobertura.targets.CoverageMetric>
+            <int>8000000</int>
+          </entry>
+          <entry>
+            <hudson.plugins.cobertura.targets.CoverageMetric>LINE</hudson.plugins.cobertura.targets.CoverageMetric>
+            <int>8000000</int>
+          </entry>
+          <entry>
+            <hudson.plugins.cobertura.targets.CoverageMetric>CONDITIONAL</hudson.plugins.cobertura.targets.CoverageMetric>
+            <int>7000000</int>
+          </entry>
+        </targets>
+      </healthyTarget>
+      <unhealthyTarget>
+        <targets class="enum-map" enum-type="hudson.plugins.cobertura.targets.CoverageMetric">
+          <entry>
+            <hudson.plugins.cobertura.targets.CoverageMetric>METHOD</hudson.plugins.cobertura.targets.CoverageMetric>
+            <int>0</int>
+          </entry>
+          <entry>
+            <hudson.plugins.cobertura.targets.CoverageMetric>LINE</hudson.plugins.cobertura.targets.CoverageMetric>
+            <int>0</int>
+          </entry>
+          <entry>
+            <hudson.plugins.cobertura.targets.CoverageMetric>CONDITIONAL</hudson.plugins.cobertura.targets.CoverageMetric>
+            <int>0</int>
+          </entry>
+        </targets>
+      </unhealthyTarget>
+      <failUnhealthy>false</failUnhealthy>
+      <failUnstable>false</failUnstable>
+      <autoUpdateHealth>false</autoUpdateHealth>
+      <autoUpdateStability>false</autoUpdateStability>
+      <zoomCoverageChart>false</zoomCoverageChart>
+      <maxNumberOfBuilds>0</maxNumberOfBuilds>
+      <result class="enum-map" enum-type="hudson.plugins.cobertura.targets.CoverageMetric">
+        <entry>
+          <hudson.plugins.cobertura.targets.CoverageMetric>PACKAGES</hudson.plugins.cobertura.targets.CoverageMetric>
+          <hudson.plugins.cobertura.Ratio>
+            <numerator>1.0</numerator>
+            <denominator>1.0</denominator>
+          </hudson.plugins.cobertura.Ratio>
+        </entry>
+        <entry>
+          <hudson.plugins.cobertura.targets.CoverageMetric>FILES</hudson.plugins.cobertura.targets.CoverageMetric>
+          <hudson.plugins.cobertura.Ratio>
+            <numerator>2.0</numerator>
+            <denominator>2.0</denominator>
+          </hudson.plugins.cobertura.Ratio>
+        </entry>
+        <entry>
+          <hudson.plugins.cobertura.targets.CoverageMetric>CLASSES</hudson.plugins.cobertura.targets.CoverageMetric>
+          <hudson.plugins.cobertura.Ratio reference="../../entry[2]/hudson.plugins.cobertura.Ratio"/>
+        </entry>
+        <entry>
+          <hudson.plugins.cobertura.targets.CoverageMetric>METHOD</hudson.plugins.cobertura.targets.CoverageMetric>
+          <hudson.plugins.cobertura.Ratio>
+            <numerator>2.0</numerator>
+            <denominator>6.0</denominator>
+          </hudson.plugins.cobertura.Ratio>
+        </entry>
+        <entry>
+          <hudson.plugins.cobertura.targets.CoverageMetric>LINE</hudson.plugins.cobertura.targets.CoverageMetric>
+          <hudson.plugins.cobertura.Ratio>
+            <numerator>2.0</numerator>
+            <denominator>7.0</denominator>
+          </hudson.plugins.cobertura.Ratio>
+        </entry>
+        <entry>
+          <hudson.plugins.cobertura.targets.CoverageMetric>CONDITIONAL</hudson.plugins.cobertura.targets.CoverageMetric>
+          <hudson.plugins.cobertura.Ratio>
+            <numerator>0.0</numerator>
+            <denominator>0.0</denominator>
+          </hudson.plugins.cobertura.Ratio>
+        </entry>
+      </result>
+      <health>
+        <score>36</score>
+        <iconClassName>icon-health-20to39</iconClassName>
+        <iconUrl>health-20to39.png</iconUrl>
+        <localizibleDescription>
+          <holder>
+            <owner>hudson.plugins.cobertura.Messages</owner>
+          </holder>
+          <key>CoberturaBuildAction.description</key>
+          <args>
+            <int>29</int>
+            <string>2/7</string>
+            <string>Lines</string>
+          </args>
+        </localizibleDescription>
+      </health>
+      <onlyStable>false</onlyStable>
+    </hudson.plugins.cobertura.CoberturaBuildAction>
+  </actions>
+  <queueId>1</queueId>
+  <timestamp>1566980051047</timestamp>
+  <startTime>1566980051060</startTime>
+  <result>SUCCESS</result>
+  <duration>39120</duration>
+  <charset>UTF-8</charset>
+  <keepLog>false</keepLog>
+  <builtOn>linux-node</builtOn>
+  <workspace>/home/denis/workspace/HelloUser</workspace>
+  <hudsonVersion>2.181</hudsonVersion>
+  <scm class="hudson.plugins.git.GitChangeLogParser" plugin="git@3.12.0">
+    <authorOrCommitter>false</authorOrCommitter>
+  </scm>
+  <culprits class="com.google.common.collect.EmptyImmutableSortedSet"/>
+</build>

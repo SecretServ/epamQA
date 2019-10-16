@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<!DOCTYPE coverage SYSTEM "http://cobertura.sourceforge.net/xml/coverage-04.dtd">
+
+<coverage line-rate="0.2857142857142857" branch-rate="1.0" lines-covered="2" lines-valid="7" branches-covered="0" branches-valid="0" complexity="1.0" version="2.1.1" timestamp="1566980107849">
+	<sources>
+		<source>/home/denis/workspace/HelloUser/Java/src/main/java</source>
+		<source>--source</source>
+	</sources>
+	<packages>
+		<package name="com.github.vitalliuss.helloci" line-rate="0.2857142857142857" branch-rate="1.0" complexity="1.0">
+			<classes>
+				<class name="com.github.vitalliuss.helloci.App" filename="com/github/vitalliuss/helloci/App.java" line-rate="0.25" branch-rate="1.0" complexity="1.0">
+					<methods>
+						<method name="&lt;init&gt;" signature="()V" line-rate="0.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="7" hits="0" branch="false"/>
+							</lines>
+						</method>
+						<method name="doNothing" signature="()V" line-rate="1.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="16" hits="2" branch="false"/>
+							</lines>
+						</method>
+						<method name="main" signature="([Ljava/lang/String;)V" line-rate="0.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="11" hits="0" branch="false"/>
+								<line number="12" hits="0" branch="false"/>
+							</lines>
+						</method>
+					</methods>
+					<lines>
+						<line number="7" hits="0" branch="false"/>
+						<line number="11" hits="0" branch="false"/>
+						<line number="12" hits="0" branch="false"/>
+						<line number="16" hits="2" branch="false"/>
+					</lines>
+				</class>
+				<class name="com.github.vitalliuss.helloci.EmptyClass" filename="com/github/vitalliuss/helloci/EmptyClass.java" line-rate="0.3333333333333333" branch-rate="1.0" complexity="1.0">
+					<methods>
+						<method name="&lt;init&gt;" signature="()V" line-rate="0.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="8" hits="0" branch="false"/>
+							</lines>
+						</method>
+						<method name="emptyMethod" signature="()V" line-rate="1.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="12" hits="2" branch="false"/>
+							</lines>
+						</method>
+						<method name="unusedMethod" signature="()V" line-rate="0.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="16" hits="0" branch="false"/>
+							</lines>
+						</method>
+					</methods>
+					<lines>
+						<line number="8" hits="0" branch="false"/>
+						<line number="12" hits="2" branch="false"/>
+						<line number="16" hits="0" branch="false"/>
+					</lines>
+				</class>
+			</classes>
+		</package>
+	</packages>
+</coverage>
