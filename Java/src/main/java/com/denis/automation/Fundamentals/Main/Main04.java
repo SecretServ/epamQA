@@ -15,11 +15,11 @@ public class Main04 {
         int result = 0;
         int numberReader = 0;
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-        System.out.print("Please, enter the quantity of numbers: ");
+        System.out.println("Please, enter the quantity of numbers: ");
         int value = Integer.parseInt(reader.readLine());
 
         for (int i = value; i > 0; i--) {
-            System.out.print("Please, enter natural number: ");
+            System.out.println("Please, enter natural number: ");
             BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
             numberReader = Integer.parseInt(br.readLine());
             result += numberReader;
