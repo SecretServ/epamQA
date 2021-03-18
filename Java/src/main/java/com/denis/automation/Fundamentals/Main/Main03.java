@@ -18,6 +18,7 @@ public class Main03 {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         System.out.print("Please, enter the quantity of numbers: ");
         int value = Integer.parseInt(reader.readLine());
+        reader.close();
 
         for (int i = 0; i < value; i++) {
             System.out.println(rundomGenerator());
