@@ -12,7 +12,8 @@ import java.io.InputStreamReader;
 public class Main05 {
 
     public static void main(String[] args) throws IOException {
-
+        
+        System.out.println("Please, enter integer from 1 to 12");
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         String line;
         String result;
@@ -49,7 +50,7 @@ public class Main05 {
             }
             System.out.println(result);
         }
-
+        br.close();
     }
 
 }
