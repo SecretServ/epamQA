@@ -15,6 +15,6 @@ public class Main01 {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         System.out.println("Please, enter your name.");
         System.out.println("Hello, " + reader.readLine());
+        reader.close();
     }
-
-}
+ }
